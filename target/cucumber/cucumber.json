@@ -1,0 +1,300 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25057841900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Normal login",
+        "description": "",
+        "id": "login;normal-login",
+        "after": [
+          {
+            "result": {
+              "duration": 4794599700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2285597600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User already on website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4801167100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User input \"standard_user\" as userName and input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107877300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User already on sales page",
+            "match": {
+              "location": "SalesSteps.verifySalesPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "As a User i want to login website sauce demo",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8061870600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Normal Sales",
+        "description": "",
+        "id": "sales;normal-sales",
+        "after": [
+          {
+            "result": {
+              "duration": 1778939100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10229788600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I succes login with username \"standard_user\" and  \"secret_sauce\" password and add cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 30
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 51
+                }
+              ],
+              "location": "SalesSteps.loginAndAddCart(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97604700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User already on sales page",
+            "match": {
+              "location": "SalesSteps.verifySalesPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 264314700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User sort product list by name Z to A",
+            "match": {
+              "location": "SalesSteps.sortProduct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161310000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Add Sauce Lab Onesie",
+            "match": {
+              "location": "SalesSteps.addingItem1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120787900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Add Test.allTheThings T-Shirt Red",
+            "match": {
+              "location": "SalesSteps.addingItem2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 222125600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click cart icon",
+            "match": {
+              "location": "SalesSteps.clickCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165795900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User remove Test.allTheThings T-Shirt Red",
+            "match": {
+              "location": "SalesSteps.removeTest()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235755100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User checkOut",
+            "match": {
+              "location": "SalesSteps.clickCheckOut()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 964536700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"Derin\" as first name and input \"Malsa\" as last name and \"123456\" as postal code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Derin",
+                  "offset": 12
+                },
+                {
+                  "val": "Malsa",
+                  "offset": 44
+                },
+                {
+                  "val": "123456",
+                  "offset": 69
+                }
+              ],
+              "location": "SalesSteps.clickContinue(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174812400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click Finish",
+            "match": {
+              "location": "SalesSteps.clickFinish()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69902000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User verify checkout order",
+            "match": {
+              "location": "SalesSteps.verifyCheckOutOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sales",
+    "description": "As a User i want to checkout in website sauce demo",
+    "id": "sales",
+    "keyword": "Feature",
+    "uri": "features/Sales.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Sales"
+      }
+    ]
+  }
+]
